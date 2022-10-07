@@ -31,7 +31,7 @@ FLUSH PRIVILEGES;
 sh 'sudo  wget -c http://wordpress.org/latest.tar.gz'
 sh 'sudo tar -xzvf latest.tar.gz'
 sh 'sudo rm -rf latest.tar.gz'
-sh 'sudo cp -r /home/ubuntu/workspace/Wordpress/* /var/www/html/'
+sh 'sudo cp -r /home/ubuntu/workspace/wordpress/* /var/www/html/'
 sh 'sudo chown -R www-data:www-data /var/www/html/'
 sh 'sudo service apache2 restart'
 sh 'echo "Installation is complete."'
